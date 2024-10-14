@@ -57,21 +57,21 @@ distributor:
   replicas: 2
   resources:
     limits:
-      memory: 5.7Gi
+      memory: 6Gi
     requests:
       cpu: 2
       memory: 4Gi
 
 ingester:
   persistentVolume:
-    size: 50Gi
+    size: 10Gi
   replicas: 3
   resources:
     limits:
       memory: 12Gi
     requests:
       cpu: 3.5
-      memory: 8Gi
+      memory: 4Gi
   topologySpreadConstraints: {}
   affinity:
     podAntiAffinity:
